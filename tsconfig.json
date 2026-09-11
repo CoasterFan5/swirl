@@ -1,0 +1,9 @@
+{
+  "extends": "./.swirl/tsconfig.json",
+  "compilerOptions": {
+    "lib": [
+      "es2024",
+      "DOM"
+    ]
+  }
+}
