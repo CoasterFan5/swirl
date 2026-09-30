@@ -1,5 +1,4 @@
 # Swirl
-
 Swirl is a full-stack web framework using file-based routing, Go for server-side code, and TypeScript for client-side code.
 
 ## Repository layout
@@ -17,15 +16,16 @@ go run ./cmd/swirl -project ./examples/playground
 
 ## Architecture
 Swirl is a full stack web framework that uses file based routing and some black magic. It does not have support for node packages, and you write serverside logic in Golang, but client side logic in typescript. 
+
 To create a page, it needs to be declared in a directory.
 ```bash
-./+page.swirl # This will be served on /
+./index.swirl # This will be served on /
 ``` 
 ```bash
-./about/page.swirl # This will be served on /about
+./about/index.swirl # This will be served on /about
 ```
 See, convient! 
-To add serverside code, you create a `+server.go`, and thats about as far as I have gotten.
+To add serverside code, you create a `server.go`, and thats about as far as I have gotten.
 
 ## Swirl Syntax
 +page.swirl
