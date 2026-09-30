@@ -4,6 +4,11 @@
     "lib": [
       "es2024",
       "DOM"
-    ]
+    ],
+    "paths": {
+      "swirl": [
+        "./ts/swirl"
+      ]
+    }
   }
 }

@@ -30,7 +30,7 @@ func discoverChildren(basePath string, addPath string) {
 			discoverChildren(basePath, path.Join(addPath, dirName))
 		} else {
 			filePath := path.Join(concatPath, item.Name())
-			if item.Name() == "+page.html" {
+			if item.Name() == "+page.swirl" {
 				// read the file cause we have to expose it.
 				fileData, _ := os.ReadFile(filePath)
 				registerRoute(path.Join(addPath), fileData)

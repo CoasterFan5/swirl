@@ -1,3 +1,3 @@
-type PageData = {
+export interface PageData {
   item: number
 }

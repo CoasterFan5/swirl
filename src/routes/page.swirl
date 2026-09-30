@@ -1,4 +1,7 @@
 <script lang="ts">
+    import { $state } from "swirl";
+
+    const count = $state(0);
 </script>
 
 <h1>Index</h1>

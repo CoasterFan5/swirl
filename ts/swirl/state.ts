@@ -36,7 +36,7 @@ class StateManager<T> {
   }
 }
 
-const $state = <T>(item: T) => {
+export const $state = <T>(item: T) => {
   return new StateManager(item)
 }
 

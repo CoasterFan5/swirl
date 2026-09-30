@@ -12,3 +12,21 @@ To create a page, it needs to be declared in a directory.
 ```
 See, convient! 
 To add serverside code, you create a `+server.go`, and thats about as far as I have gotten.
+
+## Swirl Syntax
++page.swirl
+```swirl
+<script lang="ts">
+  let counter = $state(0)
+</script>
+<effect ref={[counter]}>
+  <div>
+    The count is {counter.get()}
+  </div>
+</effect>
+<style>
+  div {
+    color: #000001
+  }
+</style>
+```
