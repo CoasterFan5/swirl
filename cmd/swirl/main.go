@@ -1,10 +1,12 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"net/http"
 	"os"
 	"path"
+	"path/filepath"
 )
 
 type RouteData struct {
@@ -42,8 +44,11 @@ func discoverChildren(basePath string, addPath string) {
 }
 
 func main() {
+	projectDir := flag.String("project", ".", "path to the Swirl project")
+	flag.Parse()
+
 	// get the routes
-	srcPath := path.Join("./src/routes")
+	srcPath := filepath.Join(*projectDir, "src", "routes")
 	discoverChildren(srcPath, "/")
 
 	mux := http.NewServeMux()

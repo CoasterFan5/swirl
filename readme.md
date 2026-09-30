@@ -1,5 +1,19 @@
-# Swirl 
-Swirl is truly a framework for the history books, in a positive or negative connotation I will not say. 
+# Swirl
+
+Swirl is a full-stack web framework using file-based routing, Go for server-side code, and TypeScript for client-side code.
+
+## Repository layout
+
+- `cmd/swirl/` contains the development server executable.
+- `packages/swirl/` contains the TypeScript framework implementation.
+- `examples/playground/` is a consumer project used to exercise builds and editor/LSP support. Its generated `.swirl/` declarations intentionally live beside its `src/` directory.
+- The root `go.mod` and `go.work` let the framework and playground remain separate Go modules while being developed together.
+
+Run the development server from the repository root with:
+
+```sh
+go run ./cmd/swirl -project ./examples/playground
+```
 
 ## Architecture
 Swirl is a full stack web framework that uses file based routing and some black magic. It does not have support for node packages, and you write serverside logic in Golang, but client side logic in typescript. 

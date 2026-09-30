@@ -7,7 +7,7 @@
     ],
     "paths": {
       "swirl": [
-        "./ts/swirl"
+        "../../packages/swirl/src"
       ]
     }
   }

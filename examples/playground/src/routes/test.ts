@@ -1,5 +1,5 @@
 import type { PageData } from "./$types";
-import { $state } from "swirl";
+import { $state } from "../../../../packages/swirl/src";
 
 const item = $state(0);
 

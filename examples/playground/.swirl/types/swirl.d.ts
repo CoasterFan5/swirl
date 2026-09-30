@@ -2,7 +2,7 @@ export { };
 
 declare global {
   const swirl: {
-    state<T>(value: T): StateM<T>;
+    state<T>(value: T): State<T>;
   };
 
 

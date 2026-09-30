@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDirs": [
       "..",
-      "./types"
+      "../examples/playground/.swirl/types"
     ]
   }
 }
